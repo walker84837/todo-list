@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+	--text-color: #f9e6d2;
+	--background-color: #5B4937;
+	--fonts: "Open Sans", 'Segoe UI', system-ui, sans-serif;
+	--spacing: 1rem;
+	--spacing-0: 1.5rem;
+	--txt-color-background: #76593C;
+	--border-color: #69513A;
+}
+
+* {
+	font-family: var(--fonts);
+	text-align: center;
+	color: var(--text-color);
+}
+
+html {
+	color-scheme: dark;
+}
+
+body {
+	background-color: var(--background-color);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: min(128ch, calc(100% - 4rem));
+	margin-inline: auto;
+	padding: var(--spacing-0);
+}
+
+footer {
+	background-color: #140d057f;
+	padding: var(--spacing-0);
+	font-size: 0.875em;
+}
+
+textarea, input, button {
+	background-color: var(--txt-color-background);
+	border-color: var(--border-color);
+}
+
+input, textarea {
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	font-weight: 400;
+	border-radius: .75em;
+}
+
+input {
+	padding: .25em;
+}
+
+textarea {
+	font-size: .85em;
+	text-align: center;
+}
+
+button {
+	padding: .625em 1.25em;
+	cursor: pointer;
+	border-width: .25em;
+	border-radius: 1em;
+	margin-top: var(--spacing);
+	margin-bottom: var(--spacing);
+}
+
+strong {
+	font-weight: 500;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+a {
+	color: var(--text-color);
+	text-align: center;
+	text-decoration: underline;
+	transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+	color: #F2881D;
+	text-decoration: underline;
+}
+
+mark {
+	background-color: #bf84407f;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 2em;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 1.5625em;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 1.325em;
+}
+
+p {
+	font-weight: 300;
+	text-align: justify;
+}
+
+ul > li {
+	text-align: justify;
+}
+
+::selection {
+	background-color: #9C642Bdc;
+}
+
+#remove-task {
+	margin: 2rem;
+}
